@@ -1,0 +1,83 @@
+body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #5e7478;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      background-color: #98e3ea;
+      padding: 20px;
+      border-bottom: 5px solid #333;
+      
+    }
+
+    .profile img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 20px;
+      
+    
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+
+    header h4 {
+      margin: 5px 0 0 0;
+      font-weight: normal;
+    }
+
+    .main-container,
+    .cv-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px; /* Row + column gap */
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .box {
+      border: 1px solid #333;
+      padding: 20px;
+      border-radius: 10px;
+      background-color: #98e3ea;;;
+      min-width: 250px;
+      flex: 1;
+      box-sizing: border-box;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #5e7478;;
+      color: white;
+    }
+
+    a {
+      color: #0000ee;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .main-container,
+      .cv-section {
+        flex-direction: column;
+      }
+    }
